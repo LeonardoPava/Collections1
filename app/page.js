@@ -15,6 +15,12 @@ import Banner from "./components/maalox/Banner";
 import Popup from "./components/maalox/Popup";
 import Sondaggio from "./components/maalox/Sondaggio";
 import Acquista from "./components/maalox/Acquista";
+import Privacy from "./components/discord/Privacy";
+import LandingHero from "./components/discord/LandingHero";
+import CardSx from "./components/discord/CardSx";
+import CardDx from "./components/discord/CardDx";
+import TitoloBottone from "./components/discord/TitoloBottone";
+import FooterDiscord from "./components/discord/FooterDiscord";
 
 
 export default function Home() {
@@ -143,6 +149,25 @@ export default function Home() {
     { image: "/images/maalox/acquista6.png", name: "Farmacia Loreto", link: "https://www.farmacialoreto.it/" },
   ];
 
+   /* Discord */
+  const data = {
+    navLinks: [
+      { label: "Scarica", href: "#download" },
+      { label: "Nitro", href: "#nitro" },
+      { label: "Scopri", href: "#discover" },
+      { label: "Sicurezza", href: "#security" },
+      { label: "Assistenza", href: "#support" },
+      { label: "Blog", href: "#blog" },
+      { label: "Sviluppatori", href: "#developers" },
+      { label: "Lavora con noi", href: "#careers" },
+    ],
+  };
+
+
+
+
+
+
   return (
     <div>
       <Hero
@@ -225,6 +250,48 @@ export default function Home() {
         <Sondaggio form={form} />
 
         <Acquista venditori={venditori} />
+
+        {/* Discord */}
+      <div class="relative bg-gradient-to-bl from-black via-[#121482] to-[#2c00aa] bg-cover bg-center">
+        <Privacy
+          titolo_privacy="Discord"
+          testo_privacy="Cliccando su 'Accetta tutti i cookie', l'utente accetta di memorizzare i cookie sul dispositivo per migliorare la navigazione del sito, analizzare l'utilizzo del sito e assistere nelle nostre attività di marketing."
+          bottone_accetta="Accetta tutti"
+          bottone_rifiuta="Rifiuta"
+          bottone_personalizza="Impostazioni cookie"
+        />
+
+        <LandingHero
+          titolo="CHAT DI GRUPPO SUPER MEGA IPER ULTRA DIVERTENTE"
+          sottotitolo="Su Discord puoi giocare, divertirti con gli amici e perché no, costruire una community globale. Personalizza il tuo spazio e rendilo il luogo perfetto in cui chiacchierare, giocare e passare del tempo."
+          imgSrc="/images/discord/herodiscord.png"
+          logoSrc="/images/discord/Logo.png"
+          logoAlt="Logo Discord"
+          browserUrl="https://discord.com"
+          bottoneSecondario="Apri Discord nel tuo browser"
+          navLinks={data.navLinks}
+        />
+
+        <CardSx
+          immagine="/images/discord/main-chat.png"
+          titolo_card="TRASMETTI IN STREAMING PER I TUOI AMICI COME SE FOSSERO DAVVERO LÌ CON TE"
+          testo_card="Grazie alle dirette streaming di alta qualità e con bassa latenza ti sembrerà che i tuoi amici siano seduti sul divano proprio accanto a te mentre giochi, guardi delle foto, finisci i compiti o fai ciò che ami fare!"
+        />
+
+        <CardDx
+          immagine="/images/discord/carddx-immagine.png"
+          titolo_card="RENDI LE TUE CHAT DI GRUPPO ANCORA PIÙ DIVERTENTI"
+          testo_card="Usa tantissimi strumenti, tra cui emoji, adesivi ed effetti per la soundboard personalizzati, per rendere uniche le tue chat testuali, video o vocali. Scegli un avatar e uno stato personalizzato, e fa\' in modo che il tuo profilo compaia in chat proprio come hai sempre desiderato."
+        />
+
+        <TitoloBottone
+          titolo="NON C'È NIENT'ALTRO QUI. MEGLIO ANDARE A CHATTARE."
+          immagine="/images/discord/downloads.png"
+          testobottone="Scarica per Windows"
+        />
+
+        <FooterDiscord />
+      </div>
     </div>
   )
 }
