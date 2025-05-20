@@ -22,6 +22,13 @@ import CardDx from "./components/discord/CardDx";
 import TitoloBottone from "./components/discord/TitoloBottone";
 import FooterDiscord from "./components/discord/FooterDiscord";
 
+import UnieroHero from "./components/uniero/UnieroHero";
+import Promo from "./components/uniero/Promo";
+import Swiper from "./components/uniero/Swiper";
+import Volantino from "./components/uniero/Volantino";
+import Servizi from "./components/uniero/Servizi";
+import UnieroFooter from "./components/uniero/UnieroFooter";
+import Categories from "./components/uniero/Categories";
 
 export default function Home() {
 
@@ -100,19 +107,19 @@ export default function Home() {
 
   const featuresData = [
     {
-      src: "/images/quellenohf/camera-icon.png",
+      src: "/images/quellenohf/feature1.png",
       alt: "Camera",
       title: "Camere e prezzi",
       description: "Mostra dettagli",
     },
     {
-      src: "/images/quellenohf/offer-icon.png",
+      src: "/images/quellenohf/feature2.webp",
       alt: "Offer",
       title: "Offerte",
       description: "Mostra dettagli",
     },
     {
-      src: "/images/quellenohf/gift-icon.png",
+      src: "/images/quellenohf/feature3.png",
       alt: "Gift",
       title: "Buoni regalo",
       description: "Mostra dettagli",
@@ -166,6 +173,187 @@ export default function Home() {
 
 
 
+
+ const heroProps = {
+    heroimage: '/images/uniero/hero.jpg',
+    herologo: '/images/uniero/logo.png',
+    heronavbar1: 'Esplora',
+    heronavbar2: 'Negozi',
+    prodottihero: [
+      { text: 'Apple Passione Casa', link: '#' },
+      { text: 'Volantino', link: '#' },
+      { text: 'Galaxy S25 Edge', link: '#' },
+      { text: 'Samsung TV', link: '#' },
+      { text: 'Motorola Edge 60 Pro', link: '#' },
+    ],
+  };
+
+
+  const promoProps = {
+  promocard: [
+    {
+      image: '/images/uniero/promo1.jpg',
+      title: 'Hotpoint Ariston  Frigorifero combinato HAT70I 932 S DC',
+      prezzo: '€ 467,00',
+      originale_prezzo: '879,90',
+      description: 'Scade tra 12h 14m 23s',
+      button: 'Ora'
+    },
+    {
+      image: '/images/uniero/promo2.jpg',
+      title: 'MSI Cyborg 15 A13VF-601IT Intel® Core™ i7 15.6" Full HD',
+      prezzo: '€ 1.099,00',
+      originale_prezzo: '1.499,00',
+      description: 'Scade tra 12h 14m 23s',
+      button: 'Ora'
+    },
+    {
+      image: '/images/uniero/promo3.jpg',
+      title: 'TIM OPPO A58 6.72" 128 GB 5000 mAh',
+      prezzo: '€ 139,00',
+      originale_prezzo: '249,00',
+      description: 'Scade tra 4g 12h 14m 23s',
+      button: 'Ora'
+    }
+  ]
+}
+
+const carouselProps = {
+    sectionTitle: 'Ora in Unieuro',
+    slides: [
+        {
+            image: '/images/uniero/swiper1.png',
+            title: 'SOLO\nONLINE',
+            text: 'Scopri i prodotti con consegna gratuita e scegli il meglio del tech della settimana!',
+            date: 'Fino al 18 maggio',
+        },
+        {
+            image: '/images/uniero/swiper3.webp',
+            title: 'UNIEURO TECH COLLECTION',
+            text: 'Scopri l’imperdibile selezione di prodotti tech con consegna gratuita!',
+            date: 'Fino al 16 maggio',
+        },
+        {
+            image: '/images/uniero/swiper2.png',
+            title: 'ioplee',
+            text: 'Esplora il comfort. Esplora lo stile. Trasforma il tuo spazio in un’esperienza.',
+            button: {
+                label: 'SCOPRI DI PIÙ',
+                link: '#',
+            },
+        },
+        {
+            image: '/images/uniero/swiper1.png',
+            title: 'SOLO\nONLINE',
+            text: 'Scopri i prodotti con consegna gratuita e scegli il meglio del tech della settimana!',
+            date: 'Fino al 18 maggio',
+        },
+        {
+            image: '/images/uniero/swiper3.webp',
+            title: 'UNIEURO TECH COLLECTION',
+            text: 'Scopri l’imperdibile selezione di prodotti tech con consegna gratuita!',
+            date: 'Fino al 16 maggio',
+        }
+    ],
+};
+
+const volantini = [
+  {
+    image: '/images/uniero/volantino1.jpg',
+    title: '📣 SPECIALE CHROMEBOOK',
+    description: 'Fino al 18 maggio',
+  },
+  {
+    image: '/images/uniero/volantino2.jpg',
+    title: '📰 VOLANTINO',
+    description: 'Fino al 18 maggio',
+  },
+];
+
+
+
+ const footerData = {
+    socialIcons: [
+      { image: '/images/uniero/social-media.png', alt: 'Facebook' },
+      { image: '/images/uniero/tik-tok.png', alt: 'TikTok' },
+      { image: '/images/uniero/twitter.png', alt: 'Twitter' },
+      { image: '/images/uniero/youtube.png', alt: 'YouTube' },
+      { image: '/images/uniero/instagram.png', alt: 'Instagram' },
+    ],
+    columns: [
+      [
+        'Conosciamoci Meglio',
+        'Chi siamo',
+        'Soluzioni per la tua azienda',
+        'Lavora con noi',
+        'Mappa del sito',
+        'Unieuro S.p.A.',
+      ],
+      [
+        'I tuoi acquisti facili',
+        'Modalità di pagamento',
+        'Modalità di spedizione',
+        'Stime tempi di consegna',
+        'Informativa prezzi e sconti',
+        'Installazione e altri servizi',
+        'Informativa RAEE',
+        'I nostri punti vendita',
+        'Volantino',
+      ],
+      [
+        'Sicurezza e trasparenza',
+        'Condizioni di vendita',
+        'Sicurezza dei pagamenti',
+        'Garanzie',
+        'Reso e diritto di recesso',
+        'Risoluzione controversie',
+        'Avvertenza legale',
+        'Privacy Policy',
+        'Assistenza Clienti',
+        'Tuteliamo la tua privacy',
+      ],
+      [
+        'Al tuo servizio',
+        'Lista Regali',
+        'Social network',
+        'PhotoSI stampa le tue foto',
+        'I nostri servizi in negozio',
+        'UniUpgrade',
+      ],
+      [
+        'Area clienti',
+        'Area personale',
+        'Newsletter',
+        'Unieuro Club',
+        'Aperture straordinarie',
+        'Assistenza clienti',
+      ],
+    ],
+  };
+
+
+
+const servizi = [
+  { image: '/images/uniero/store.png', title: 'Ritira', description: 'in negozio' },
+  { image: '/images/uniero/express-delivery.png', title: 'Scegli', description: 'la tua consegna' },
+  { image: '/images/uniero/tools.png', title: 'Installazione', description: 'ed altri servizi' },
+  { image: '/images/uniero/euro-sign.png', title: 'Finanziamenti', description: '' },
+  { image: '/images/uniero/medal.png', title: 'Assistenza', description: 'aggiuntiva' },
+  { image: '/images/uniero/box.png', title: 'Reso', description: 'e diritto di recesso' },
+];
+
+
+const categories = [
+    { image: '/images/uniero/informatica.png', title: 'Informatica', color: '#FF5733' },
+    { image: '/images/uniero/telefonia.png', title: 'Telefonia', color: '#33FF57' },
+    { image: '/images/uniero/tv.png', title: 'TV e Home..', color: '#3357FF' },
+    { image: '/images/uniero/audio.png', title: 'Audio e Hi-Fi', color: '#FF33A1' },
+    { image: '/images/uniero/fotocamera.png', title: 'Foto e Video', color: '#FF8C33' },
+    { image: '/images/uniero/elettrodomestici.webp', title: 'Elettrodomestici', color: '#33FFF5' },
+    { image: '/images/uniero/console.webp', title: 'Console e Videogiochi', color: '#FF33D4' },
+    { image: '/images/uniero/svago.png', title: 'Tempo Libero', color: '#FFC733' },
+    { image: '/images/uniero/brand.png', title: 'Brand', color: '#FF3333' },
+  ];
 
 
   return (
@@ -292,6 +480,21 @@ export default function Home() {
 
         <FooterDiscord />
       </div>
+
+      <UnieroHero heroProps={heroProps}/>
+
+
+      <Promo promoProps={promoProps}/>
+
+      <Swiper carouselProps={carouselProps} />
+
+      <Volantino volantinoProps={volantini} />
+
+      <Servizi serviziProps={servizi} />
+
+      <UnieroFooter footerData={footerData} />
+
+      <Categories categories={categories} />
     </div>
   )
 }

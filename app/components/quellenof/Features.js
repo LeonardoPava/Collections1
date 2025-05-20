@@ -3,19 +3,19 @@ import React from "react";
 const Features = ({
   images = [
     {
-      imgSrc: "/path/to/camera-icon.png",
+      imgSrc: "/images/quellenohf/feature1.png",
       alt: "Camera",
       title: "Camere e prezzi",
       description: "Mostra dettagli",
     },
     {
-      imgSrc: "/path/to/offer-icon.png",
+      imgSrc: "/images/quellenohf/feature2.webp",
       alt: "Offer",
       title: "Offerte",
       description: "Mostra dettagli",
     },
     {
-      imgSrc: "/path/to/gift-icon.png",
+      imgSrc: "/images/quellenohf/feature3.png",
       alt: "Gift",
       title: "Buoni regalo",
       description: "Mostra dettagli",
