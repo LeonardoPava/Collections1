@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 import Image from 'next/image';
 
 export default function UnieuroPromo({ promoProps }) {
@@ -50,7 +48,7 @@ export default function UnieuroPromo({ promoProps }) {
                   <span className="bg-orange-500 text-white text-xs px-2 py-1 rounded-full flex items-center gap-1">
                     <span>{promo.button}</span>
                     <img
-                      src="/images/uniero/logopromo.svg"
+                      src="images/unieuro/logopromo.svg"
                       alt="Icona"
                       className="w-4 h-4"
                     />

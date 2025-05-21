@@ -1,3 +1,4 @@
+/* Quellenhof */
 import CardPacchetti from "./components/quellenof/CardPacchetti";
 import Hero from "./components/quellenof/Hero";
 import LuxuryIntroSection from "./components/quellenof/LuxuryIntroSection";
@@ -7,6 +8,16 @@ import Features from "./components/quellenof/Features";
 import NewsLetter from "./components/quellenof/NewsLetter";
 import Footer from "./components/quellenof/Footer";
 import CardTesto from "./components/quellenof/CardTesto";
+
+/* Discord */
+import Privacy from "./components/discord/Privacy";
+import LandingHero from "./components/discord/LandingHero";
+import CardSx from "./components/discord/CardSx";
+import CardDx from "./components/discord/CardDx";
+import TitoloBottone from "./components/discord/TitoloBottone";
+import FooterDiscord from "./components/discord/FooterDiscord";
+
+/* Maalox */
 import Navbar from "./components/maalox/Navbar";
 import Card from "./components/maalox/Card";
 import Card2 from "./components/maalox/Card2";
@@ -15,23 +26,19 @@ import Banner from "./components/maalox/Banner";
 import Popup from "./components/maalox/Popup";
 import Sondaggio from "./components/maalox/Sondaggio";
 import Acquista from "./components/maalox/Acquista";
-import Privacy from "./components/discord/Privacy";
-import LandingHero from "./components/discord/LandingHero";
-import CardSx from "./components/discord/CardSx";
-import CardDx from "./components/discord/CardDx";
-import TitoloBottone from "./components/discord/TitoloBottone";
-import FooterDiscord from "./components/discord/FooterDiscord";
 
-import UnieroHero from "./components/uniero/UnieroHero";
-import Promo from "./components/uniero/Promo";
-import Swiper from "./components/uniero/Swiper";
-import Volantino from "./components/uniero/Volantino";
-import Servizi from "./components/uniero/Servizi";
-import UnieroFooter from "./components/uniero/UnieroFooter";
-import Categories from "./components/uniero/Categories";
+/* Unieuro */
+import UnieuroHero from "./components/unieuro/UnieuroHero";
+import Promo from "./components/unieuro/Promo";
+import Swiper from "./components/unieuro/Swiper";
+import Volantino from "./components/unieuro/Volantino";
+import Servizi from "./components/unieuro/Servizi";
+import UnieuroFooter from "./components/unieuro/UnieuroFooter";
+import Categories from "./components/unieuro/Categories";
 
 export default function Home() {
 
+  /* Quellenhof */
   const navLinks = [
     { label: "Impressioni", href: "#" },
     { label: "Buoni", href: "#" },
@@ -126,6 +133,21 @@ export default function Home() {
     },
   ];
 
+  /* Discord */
+  const data = {
+    navLinks: [
+      { label: "Scarica", href: "#download" },
+      { label: "Nitro", href: "#nitro" },
+      { label: "Scopri", href: "#discover" },
+      { label: "Sicurezza", href: "#security" },
+      { label: "Assistenza", href: "#support" },
+      { label: "Blog", href: "#blog" },
+      { label: "Sviluppatori", href: "#developers" },
+      { label: "Lavora con noi", href: "#careers" },
+    ],
+  };
+
+  /* Maalox */
   const navbarLinks = [
     { label: "Home", href: "#" },
     { label: "Prodotti", href: "#" },
@@ -156,27 +178,10 @@ export default function Home() {
     { image: "/images/maalox/acquista6.png", name: "Farmacia Loreto", link: "https://www.farmacialoreto.it/" },
   ];
 
-   /* Discord */
-  const data = {
-    navLinks: [
-      { label: "Scarica", href: "#download" },
-      { label: "Nitro", href: "#nitro" },
-      { label: "Scopri", href: "#discover" },
-      { label: "Sicurezza", href: "#security" },
-      { label: "Assistenza", href: "#support" },
-      { label: "Blog", href: "#blog" },
-      { label: "Sviluppatori", href: "#developers" },
-      { label: "Lavora con noi", href: "#careers" },
-    ],
-  };
-
-
-
-
-
- const heroProps = {
-    heroimage: '/images/uniero/hero.jpg',
-    herologo: '/images/uniero/logo.png',
+  /* Unieuro */
+   const heroProps = {
+    heroimage: '/images/unieuro/hero.jpg',
+    herologo: '/images/unieuro/logo.png',
     heronavbar1: 'Esplora',
     heronavbar2: 'Negozi',
     prodottihero: [
@@ -186,13 +191,13 @@ export default function Home() {
       { text: 'Samsung TV', link: '#' },
       { text: 'Motorola Edge 60 Pro', link: '#' },
     ],
-  };
+    };
 
 
-  const promoProps = {
-  promocard: [
+    const promoProps = {
+    promocard: [
     {
-      image: '/images/uniero/promo1.jpg',
+      image: '/images/unieuro/promo1.jpg',
       title: 'Hotpoint Ariston  Frigorifero combinato HAT70I 932 S DC',
       prezzo: '€ 467,00',
       originale_prezzo: '879,90',
@@ -200,7 +205,7 @@ export default function Home() {
       button: 'Ora'
     },
     {
-      image: '/images/uniero/promo2.jpg',
+      image: '/images/unieuro/promo2.jpg',
       title: 'MSI Cyborg 15 A13VF-601IT Intel® Core™ i7 15.6" Full HD',
       prezzo: '€ 1.099,00',
       originale_prezzo: '1.499,00',
@@ -208,152 +213,152 @@ export default function Home() {
       button: 'Ora'
     },
     {
-      image: '/images/uniero/promo3.jpg',
+      image: '/images/unieuro/promo3.jpg',
       title: 'TIM OPPO A58 6.72" 128 GB 5000 mAh',
       prezzo: '€ 139,00',
       originale_prezzo: '249,00',
       description: 'Scade tra 4g 12h 14m 23s',
       button: 'Ora'
     }
-  ]
-}
+    ]
+  }
 
-const carouselProps = {
+  const carouselProps = {
     sectionTitle: 'Ora in Unieuro',
     slides: [
-        {
-            image: '/images/uniero/swiper1.png',
-            title: 'SOLO\nONLINE',
-            text: 'Scopri i prodotti con consegna gratuita e scegli il meglio del tech della settimana!',
-            date: 'Fino al 18 maggio',
+      {
+        image: '/images/unieuro/swiper1.png',
+        title: 'SOLO\nONLINE',
+        text: 'Scopri i prodotti con consegna gratuita e scegli il meglio del tech della settimana!',
+        date: 'Fino al 18 maggio',
+      },
+      {
+        image: '/images/unieuro/swiper3.webp',
+        title: 'UNIEURO TECH COLLECTION',
+        text: 'Scopri l’imperdibile selezione di prodotti tech con consegna gratuita!',
+        date: 'Fino al 16 maggio',
+      },
+      {
+        image: '/images/unieuro/swiper2.png',
+        title: 'ioplee',
+        text: 'Esplora il comfort. Esplora lo stile. Trasforma il tuo spazio in un’esperienza.',
+        button: {
+          label: 'SCOPRI DI PIÙ',
+          link: '#',
         },
-        {
-            image: '/images/uniero/swiper3.webp',
-            title: 'UNIEURO TECH COLLECTION',
-            text: 'Scopri l’imperdibile selezione di prodotti tech con consegna gratuita!',
-            date: 'Fino al 16 maggio',
-        },
-        {
-            image: '/images/uniero/swiper2.png',
-            title: 'ioplee',
-            text: 'Esplora il comfort. Esplora lo stile. Trasforma il tuo spazio in un’esperienza.',
-            button: {
-                label: 'SCOPRI DI PIÙ',
-                link: '#',
-            },
-        },
-        {
-            image: '/images/uniero/swiper1.png',
-            title: 'SOLO\nONLINE',
-            text: 'Scopri i prodotti con consegna gratuita e scegli il meglio del tech della settimana!',
-            date: 'Fino al 18 maggio',
-        },
-        {
-            image: '/images/uniero/swiper3.webp',
-            title: 'UNIEURO TECH COLLECTION',
-            text: 'Scopri l’imperdibile selezione di prodotti tech con consegna gratuita!',
-            date: 'Fino al 16 maggio',
-        }
-    ],
-};
-
-const volantini = [
-  {
-    image: '/images/uniero/volantino1.jpg',
-    title: '📣 SPECIALE CHROMEBOOK',
-    description: 'Fino al 18 maggio',
-  },
-  {
-    image: '/images/uniero/volantino2.jpg',
-    title: '📰 VOLANTINO',
-    description: 'Fino al 18 maggio',
-  },
-];
-
-
-
- const footerData = {
-    socialIcons: [
-      { image: '/images/uniero/social-media.png', alt: 'Facebook' },
-      { image: '/images/uniero/tik-tok.png', alt: 'TikTok' },
-      { image: '/images/uniero/twitter.png', alt: 'Twitter' },
-      { image: '/images/uniero/youtube.png', alt: 'YouTube' },
-      { image: '/images/uniero/instagram.png', alt: 'Instagram' },
-    ],
-    columns: [
-      [
-        'Conosciamoci Meglio',
-        'Chi siamo',
-        'Soluzioni per la tua azienda',
-        'Lavora con noi',
-        'Mappa del sito',
-        'Unieuro S.p.A.',
-      ],
-      [
-        'I tuoi acquisti facili',
-        'Modalità di pagamento',
-        'Modalità di spedizione',
-        'Stime tempi di consegna',
-        'Informativa prezzi e sconti',
-        'Installazione e altri servizi',
-        'Informativa RAEE',
-        'I nostri punti vendita',
-        'Volantino',
-      ],
-      [
-        'Sicurezza e trasparenza',
-        'Condizioni di vendita',
-        'Sicurezza dei pagamenti',
-        'Garanzie',
-        'Reso e diritto di recesso',
-        'Risoluzione controversie',
-        'Avvertenza legale',
-        'Privacy Policy',
-        'Assistenza Clienti',
-        'Tuteliamo la tua privacy',
-      ],
-      [
-        'Al tuo servizio',
-        'Lista Regali',
-        'Social network',
-        'PhotoSI stampa le tue foto',
-        'I nostri servizi in negozio',
-        'UniUpgrade',
-      ],
-      [
-        'Area clienti',
-        'Area personale',
-        'Newsletter',
-        'Unieuro Club',
-        'Aperture straordinarie',
-        'Assistenza clienti',
-      ],
+      },
+      {
+        image: '/images/unieuro/swiper1.png',
+        title: 'SOLO\nONLINE',
+        text: 'Scopri i prodotti con consegna gratuita e scegli il meglio del tech della settimana!',
+        date: 'Fino al 18 maggio',
+      },
+      {
+        image: '/images/unieuro/swiper3.webp',
+        title: 'UNIEURO TECH COLLECTION',
+        text: 'Scopri l’imperdibile selezione di prodotti tech con consegna gratuita!',
+        date: 'Fino al 16 maggio',
+      }
     ],
   };
 
-
-
-const servizi = [
-  { image: '/images/uniero/store.png', title: 'Ritira', description: 'in negozio' },
-  { image: '/images/uniero/express-delivery.png', title: 'Scegli', description: 'la tua consegna' },
-  { image: '/images/uniero/tools.png', title: 'Installazione', description: 'ed altri servizi' },
-  { image: '/images/uniero/euro-sign.png', title: 'Finanziamenti', description: '' },
-  { image: '/images/uniero/medal.png', title: 'Assistenza', description: 'aggiuntiva' },
-  { image: '/images/uniero/box.png', title: 'Reso', description: 'e diritto di recesso' },
-];
-
-
-const categories = [
-    { image: '/images/uniero/informatica.png', title: 'Informatica', color: '#FF5733' },
-    { image: '/images/uniero/telefonia.png', title: 'Telefonia', color: '#33FF57' },
-    { image: '/images/uniero/tv.png', title: 'TV e Home..', color: '#3357FF' },
-    { image: '/images/uniero/audio.png', title: 'Audio e Hi-Fi', color: '#FF33A1' },
-    { image: '/images/uniero/fotocamera.png', title: 'Foto e Video', color: '#FF8C33' },
-    { image: '/images/uniero/elettrodomestici.webp', title: 'Elettrodomestici', color: '#33FFF5' },
-    { image: '/images/uniero/console.webp', title: 'Console e Videogiochi', color: '#FF33D4' },
-    { image: '/images/uniero/svago.png', title: 'Tempo Libero', color: '#FFC733' },
-    { image: '/images/uniero/brand.png', title: 'Brand', color: '#FF3333' },
+  const volantini = [
+    {
+    image: '/images/unieuro/volantino1.jpg',
+    title: '📣 SPECIALE CHROMEBOOK',
+    description: 'Fino al 18 maggio',
+    },
+    {
+    image: '/images/unieuro/volantino2.jpg',
+    title: '📰 VOLANTINO',
+    description: 'Fino al 18 maggio',
+    },
   ];
+
+
+
+   const footerData = {
+    socialIcons: [
+      { image: '/images/unieuro/social-media.png', alt: 'Facebook' },
+      { image: '/images/unieuro/tik-tok.png', alt: 'TikTok' },
+      { image: '/images/unieuro/twitter.png', alt: 'Twitter' },
+      { image: '/images/unieuro/youtube.png', alt: 'YouTube' },
+      { image: '/images/unieuro/instagram.png', alt: 'Instagram' },
+    ],
+    columns: [
+      [
+      'Conosciamoci Meglio',
+      'Chi siamo',
+      'Soluzioni per la tua azienda',
+      'Lavora con noi',
+      'Mappa del sito',
+      'Unieuro S.p.A.',
+      ],
+      [
+      'I tuoi acquisti facili',
+      'Modalità di pagamento',
+      'Modalità di spedizione',
+      'Stime tempi di consegna',
+      'Informativa prezzi e sconti',
+      'Installazione e altri servizi',
+      'Informativa RAEE',
+      'I nostri punti vendita',
+      'Volantino',
+      ],
+      [
+      'Sicurezza e trasparenza',
+      'Condizioni di vendita',
+      'Sicurezza dei pagamenti',
+      'Garanzie',
+      'Reso e diritto di recesso',
+      'Risoluzione controversie',
+      'Avvertenza legale',
+      'Privacy Policy',
+      'Assistenza Clienti',
+      'Tuteliamo la tua privacy',
+      ],
+      [
+      'Al tuo servizio',
+      'Lista Regali',
+      'Social network',
+      'PhotoSI stampa le tue foto',
+      'I nostri servizi in negozio',
+      'UniUpgrade',
+      ],
+      [
+      'Area clienti',
+      'Area personale',
+      'Newsletter',
+      'Unieuro Club',
+      'Aperture straordinarie',
+      'Assistenza clienti',
+      ],
+    ],
+    };
+
+
+
+  const servizi = [
+    { image: '/images/unieuro/store.png', title: 'Ritira', description: 'in negozio' },
+    { image: '/images/unieuro/express-delivery.png', title: 'Scegli', description: 'la tua consegna' },
+    { image: '/images/unieuro/tools.png', title: 'Installazione', description: 'ed altri servizi' },
+    { image: '/images/unieuro/euro-sign.png', title: 'Finanziamenti', description: '' },
+    { image: '/images/unieuro/medal.png', title: 'Assistenza', description: 'aggiuntiva' },
+    { image: '/images/unieuro/box.png', title: 'Reso', description: 'e diritto di recesso' },
+  ];
+
+
+  const categories = [
+    { image: '/images/unieuro/informatica.png', title: 'Informatica', color: '#FF5733' },
+    { image: '/images/unieuro/telefonia.png', title: 'Telefonia', color: '#33FF57' },
+    { image: '/images/unieuro/tv.png', title: 'TV e Home..', color: '#3357FF' },
+    { image: '/images/unieuro/audio.png', title: 'Audio e Hi-Fi', color: '#FF33A1' },
+    { image: '/images/unieuro/fotocamera.png', title: 'Foto e Video', color: '#FF8C33' },
+    { image: '/images/unieuro/elettrodomestici.webp', title: 'Elettrodomestici', color: '#33FFF5' },
+    { image: '/images/unieuro/console.webp', title: 'Console e Videogiochi', color: '#FF33D4' },
+    { image: '/images/unieuro/svago.png', title: 'Tempo Libero', color: '#FFC733' },
+    { image: '/images/unieuro/brand.png', title: 'Brand', color: '#FF3333' },
+    ];
 
 
   return (
@@ -440,7 +445,7 @@ const categories = [
         <Acquista venditori={venditori} />
 
         {/* Discord */}
-      <div class="relative bg-gradient-to-bl from-black via-[#121482] to-[#2c00aa] bg-cover bg-center">
+      <div className="relative bg-gradient-to-bl from-black via-[#121482] to-[#2c00aa] bg-cover bg-center">
         <Privacy
           titolo_privacy="Discord"
           testo_privacy="Cliccando su 'Accetta tutti i cookie', l'utente accetta di memorizzare i cookie sul dispositivo per migliorare la navigazione del sito, analizzare l'utilizzo del sito e assistere nelle nostre attività di marketing."
@@ -469,7 +474,7 @@ const categories = [
         <CardDx
           immagine="/images/discord/carddx-immagine.png"
           titolo_card="RENDI LE TUE CHAT DI GRUPPO ANCORA PIÙ DIVERTENTI"
-          testo_card="Usa tantissimi strumenti, tra cui emoji, adesivi ed effetti per la soundboard personalizzati, per rendere uniche le tue chat testuali, video o vocali. Scegli un avatar e uno stato personalizzato, e fa\' in modo che il tuo profilo compaia in chat proprio come hai sempre desiderato."
+          testo_card="Usa tantissimi strumenti, tra cui emoji, adesivi ed effetti per la soundboard personalizzati, per rendere uniche le tue chat testuali, video o vocali. Scegli un avatar e uno stato personalizzato, e fa' in modo che il tuo profilo compaia in chat proprio come hai sempre desiderato."
         />
 
         <TitoloBottone
@@ -481,8 +486,7 @@ const categories = [
         <FooterDiscord />
       </div>
 
-      <UnieroHero heroProps={heroProps}/>
-
+      <UnieuroHero heroProps={heroProps}/>
 
       <Promo promoProps={promoProps}/>
 
@@ -492,7 +496,7 @@ const categories = [
 
       <Servizi serviziProps={servizi} />
 
-      <UnieroFooter footerData={footerData} />
+      <UnieuroFooter footerData={footerData} />
 
       <Categories categories={categories} />
     </div>

@@ -35,7 +35,7 @@ export default function CategoriesGrid({ categories }) {
         <div className="flex justify-between w-full mb-4">
           <div className="flex items-center whitespace-nowrap mr-2">
             <Image
-              src="/images/uniero/store.png"
+              src="/images/unieuro/store.png"
               alt="Ritira in negozio"
               width={24}
               height={24}
@@ -45,7 +45,7 @@ export default function CategoriesGrid({ categories }) {
           </div>
           <div className="flex items-center whitespace-nowrap mx-2">
             <Image
-              src="/images/uniero/credit-card.png"
+              src="/images/unieuro/credit-card.png"
               alt="Unieuro club"
               width={24}
               height={24}
@@ -55,7 +55,7 @@ export default function CategoriesGrid({ categories }) {
           </div>
           <div className="flex items-center whitespace-nowrap ml-2">
             <Image
-              src="/images/uniero/box.png"
+              src="/images/unieuro/box.png"
               alt="Reso e diritto di recesso"
               width={24}
               height={24}
@@ -72,7 +72,7 @@ export default function CategoriesGrid({ categories }) {
           <div className="flex items-center whitespace-nowrap">
             <span className="text-sm font-medium">Accedi/registrati</span>
             <Image
-              src="/images/uniero/logo.png"
+              src="/images/unieuro/logo.png"
               alt="Accedi/registrati"
               width={20}
               height={20}
@@ -88,7 +88,7 @@ export default function CategoriesGrid({ categories }) {
           <div className="flex items-center whitespace-nowrap">
             <span className="text-sm font-medium">Scopri di più</span>
             <Image
-              src="/images/uniero/logo.png"
+              src="/images/unieuro/logo.png"
               alt="Scopri di più"
               width={20}
               height={20}
