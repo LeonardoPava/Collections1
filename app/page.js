@@ -363,6 +363,7 @@ export default function Home() {
 
   return (
     <div>
+      {/* Quellenhof */}
       <Hero
         backgroundImage="/images/quellenohf/hero.jpg"
         logo="/images/quellenohf/logo.svg"
@@ -397,6 +398,49 @@ export default function Home() {
 
       <Footer />
 
+      {/* Discord */}
+      <div className="relative bg-gradient-to-bl from-black via-[#121482] to-[#2c00aa] bg-cover bg-center">
+        <Privacy
+          titolo_privacy="Discord"
+          testo_privacy="Cliccando su 'Accetta tutti i cookie', l'utente accetta di memorizzare i cookie sul dispositivo per migliorare la navigazione del sito, analizzare l'utilizzo del sito e assistere nelle nostre attività di marketing."
+          bottone_accetta="Accetta tutti"
+          bottone_rifiuta="Rifiuta"
+          bottone_personalizza="Impostazioni cookie"
+        />
+
+        <LandingHero
+          titolo="CHAT DI GRUPPO SUPER MEGA IPER ULTRA DIVERTENTE"
+          sottotitolo="Su Discord puoi giocare, divertirti con gli amici e perché no, costruire una community globale. Personalizza il tuo spazio e rendilo il luogo perfetto in cui chiacchierare, giocare e passare del tempo."
+          imgSrc="/images/discord/herodiscord.png"
+          logoSrc="/images/discord/Logo.png"
+          logoAlt="Logo Discord"
+          browserUrl="https://discord.com"
+          bottoneSecondario="Apri Discord nel tuo browser"
+          navLinks={data.navLinks}
+        />
+
+        <CardSx
+          immagine="/images/discord/main-chat.png"
+          titolo_card="TRASMETTI IN STREAMING PER I TUOI AMICI COME SE FOSSERO DAVVERO LÌ CON TE"
+          testo_card="Grazie alle dirette streaming di alta qualità e con bassa latenza ti sembrerà che i tuoi amici siano seduti sul divano proprio accanto a te mentre giochi, guardi delle foto, finisci i compiti o fai ciò che ami fare!"
+        />
+
+        <CardDx
+          immagine="/images/discord/carddx-immagine.png"
+          titolo_card="RENDI LE TUE CHAT DI GRUPPO ANCORA PIÙ DIVERTENTI"
+          testo_card="Usa tantissimi strumenti, tra cui emoji, adesivi ed effetti per la soundboard personalizzati, per rendere uniche le tue chat testuali, video o vocali. Scegli un avatar e uno stato personalizzato, e fa' in modo che il tuo profilo compaia in chat proprio come hai sempre desiderato."
+        />
+
+        <TitoloBottone
+          titolo="NON C'È NIENT'ALTRO QUI. MEGLIO ANDARE A CHATTARE."
+          immagine="/images/discord/downloads.png"
+          testobottone="Scarica per Windows"
+        />
+
+        <FooterDiscord />
+      </div>
+
+      {/* Maalox */}
       <Navbar
         navbarlogo="/images/maalox/logo.svg"
         navbarsearchicon="/images/maalox/webicon.png"
@@ -444,48 +488,7 @@ export default function Home() {
 
         <Acquista venditori={venditori} />
 
-        {/* Discord */}
-      <div className="relative bg-gradient-to-bl from-black via-[#121482] to-[#2c00aa] bg-cover bg-center">
-        <Privacy
-          titolo_privacy="Discord"
-          testo_privacy="Cliccando su 'Accetta tutti i cookie', l'utente accetta di memorizzare i cookie sul dispositivo per migliorare la navigazione del sito, analizzare l'utilizzo del sito e assistere nelle nostre attività di marketing."
-          bottone_accetta="Accetta tutti"
-          bottone_rifiuta="Rifiuta"
-          bottone_personalizza="Impostazioni cookie"
-        />
-
-        <LandingHero
-          titolo="CHAT DI GRUPPO SUPER MEGA IPER ULTRA DIVERTENTE"
-          sottotitolo="Su Discord puoi giocare, divertirti con gli amici e perché no, costruire una community globale. Personalizza il tuo spazio e rendilo il luogo perfetto in cui chiacchierare, giocare e passare del tempo."
-          imgSrc="/images/discord/herodiscord.png"
-          logoSrc="/images/discord/Logo.png"
-          logoAlt="Logo Discord"
-          browserUrl="https://discord.com"
-          bottoneSecondario="Apri Discord nel tuo browser"
-          navLinks={data.navLinks}
-        />
-
-        <CardSx
-          immagine="/images/discord/main-chat.png"
-          titolo_card="TRASMETTI IN STREAMING PER I TUOI AMICI COME SE FOSSERO DAVVERO LÌ CON TE"
-          testo_card="Grazie alle dirette streaming di alta qualità e con bassa latenza ti sembrerà che i tuoi amici siano seduti sul divano proprio accanto a te mentre giochi, guardi delle foto, finisci i compiti o fai ciò che ami fare!"
-        />
-
-        <CardDx
-          immagine="/images/discord/carddx-immagine.png"
-          titolo_card="RENDI LE TUE CHAT DI GRUPPO ANCORA PIÙ DIVERTENTI"
-          testo_card="Usa tantissimi strumenti, tra cui emoji, adesivi ed effetti per la soundboard personalizzati, per rendere uniche le tue chat testuali, video o vocali. Scegli un avatar e uno stato personalizzato, e fa' in modo che il tuo profilo compaia in chat proprio come hai sempre desiderato."
-        />
-
-        <TitoloBottone
-          titolo="NON C'È NIENT'ALTRO QUI. MEGLIO ANDARE A CHATTARE."
-          immagine="/images/discord/downloads.png"
-          testobottone="Scarica per Windows"
-        />
-
-        <FooterDiscord />
-      </div>
-
+      {/* Unieuro */}
       <UnieuroHero heroProps={heroProps}/>
 
       <Promo promoProps={promoProps}/>
